@@ -14,7 +14,10 @@ def main():
     num_words = count_words(book_text)
     occurrences = count_character_occurrences(book_text)
     sorted_occurrences = sort_occurrences(occurrences)
+    print_report(book_path, num_words, sorted_occurrences)
 
+
+def print_report(book_path: str, num_words: int, sorted_occurrences: list) -> None:
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count ----------")
