@@ -19,6 +19,7 @@ def main():
     num_words = count_words(book_text)
     occurrences = count_character_occurrences(book_text)
     sorted_occurrences = sort_occurrences(occurrences)
+
     print_report(book_path, num_words, sorted_occurrences)
 
 
